@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+	<title>Binary To Decimal Converter</title>
+	<!-- If IE use the latest rendering engine -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Set the page to the width of the device and set the zoon level -->
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style type="text/css">
+	html,
+	body {
+	  height: 100%;
+	  font-size: 14px;
+	  
+	}
+
+	.page {
+	  min-height: 100%;
+	  height: auto;
+	  margin: 0 auto -100px;
+	  padding: 0 0 60px;
+	}
+
+	#content {
+		text-align: center;
+	}
+
+	#footer {
+	  height: 60px;
+	  margin-top: 100px;
+	 
+	}
+
+	#input, #output {
+		margin: 20px;
+	}
+
+	#bottom {
+		height: 20px;
+	}
+
+	h1 {
+		margin: 20px;
+	}
+
+	h2 {
+		margin: 20px;
+	}
+
+	p {
+		margin: 20px;
+		padding: 10px;
+		font-size: 1.1em;
+	}
+
+	select {
+		margin: 20px;
+	}
+
+</style>
+<body>
+<div class="page">
+<div class="container">
+
+	<div class="page-header">
+		<h1>Currency Converter</h1>
+	</div>
+	
+</div>
+
+
+	<div class="container">
+
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<h2>Convert From</h2>
+			<select id="convertFrom">
+				<option value="AUD">AUD</option>
+				<option value="BGN">BGN</option>
+				<option value="CAD">CAD</option>
+				<option value="CNY">CNY</option>
+				<option value="EUR">EUR</option>
+				<option value="GBP">GBP</option>
+				<option value="JPY">JPY</option>
+				<option value="RUB">RUB</option>
+				<option value="USD">USD</option>
+			</select>
+
+			<div class="input-group input-group-lg" id="input">
+				<span class="input-group-addon">Amount</span>
+				<input id="fromVal" type="text" class="form-control" placeholder="">
+			</div>
+
+			<!---
+			<label>Amount</label>
+			<input id="fromVal" type="text"></input>
+			-->
+		</div>
+
+		
+	
+	
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			
+			<h2>Convert To</h2>
+			<select id="convertTo">
+				<option value="AUD">AUD</option>
+				<option value="BGN">BGN</option>
+				<option value="CAD">CAD</option>
+				<option value="CNY">CNY</option>
+				<option value="EUR">EUR</option>
+				<option value="GBP">GBP</option>
+				<option value="JPY">JPY</option>
+				<option value="RUB">RUB</option>
+				<option value="USD">USD</option>
+			</select>
+
+			<div class="input-group input-group-lg" id="output">
+				<span class="input-group-addon">Amount</span>
+				<input id="toVal" type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+			<div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				
+			</div>
+	</div>
+
+
+	<div class="row">
+			<div id="#bottom" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<button id="convert" class="btn btn-default btn-lg" type="submit" >CONVERT</button>
+				
+			</div>
+	</div>
+
+		
+
+	</div>
+
+	
+
+</div>
+
+<footer>
+	<div class="container">
+        <p class="text-muted">Created by Christopher Darling</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
