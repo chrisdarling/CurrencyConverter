@@ -17,7 +17,7 @@ $('#convert').on('click', function() {
 		$('#toVal').val("Invalid data input");
 	} else {
 		$.ajax( {
-			url: 'http://api.fixer.io/latest',
+			url: 'https://api.fixer.io/latest',
 			type: 'get',
 			cache: false,
 			success: function(data) {
